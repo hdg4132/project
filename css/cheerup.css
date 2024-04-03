@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: url(../img/fan_banner.png) no-repeat center center/cover;
+}
+
+#header {
+  height: 450px;
+}
+
+main {
+  width: 1000px;
+  margin: 20px auto;
+  border: 1px solid black;
+  height: 1200px;
+}
+.sec-1 {
+  border: 1px solid blue;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.ch {
+  border: 1px solid black;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.ch-1 {
+  border: 1px solid black;
+}
+.ch-2 {
+  border: 1px solid black;
+  display: flex;
+}
