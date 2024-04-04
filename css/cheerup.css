@@ -1,38 +1,99 @@
-body {
+* {
   margin: 0;
   padding: 0;
 }
 
 header {
-  background: url(../img/fan_banner.png) no-repeat center center/cover;
+  background: url(../img/heroes_banner.png) no-repeat center top/cover;
 }
 
 #header {
-  height: 450px;
+  height: 438px;
+}
+header .fans {
+  color: white;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  height: 100%;
+}
+
+.home ul {
+  display: flex;
+}
+header li {
+  list-style: none;
+  color: grey;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.menu {
+  line-height: 30px;
 }
 
 main {
-  width: 1000px;
-  margin: 20px auto;
-  border: 1px solid black;
-  height: 1200px;
-}
-.sec-1 {
-  border: 1px solid blue;
-  display: flex;
-  box-sizing: border-box;
-}
-
-.ch {
-  border: 1px solid black;
-  margin: 0 auto;
-  box-sizing: border-box;
+  width: 70%;
 }
 
 .ch-1 {
+  width: 100%;
+  text-align: center;
+  line-height: 20px;
+}
+
+.ch-1 {
+  margin-bottom: 30px;
+}
+.ch-1 p {
+  font-size: 13px;
+  color: grey;
+}
+#ch-2 {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
   border: 1px solid black;
 }
+
 .ch-2 {
-  border: 1px solid black;
+  line-height: 30px;
+}
+
+.ch-2 p {
+  font-size: 13px;
+}
+.song1 p img {
+  width: 100%;
+}
+
+.sec {
   display: flex;
+  text-align: center;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.sec div {
+  width: 33%;
+}
+.sec div audio {
+  width: 100%;
+}
+
+aside {
+  width: 30%;
+}
+
+.go-top {
+  position: fixed;
+  right: 20px;
+  bottom: 0;
 }
