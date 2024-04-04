@@ -4,7 +4,7 @@
 }
 
 header {
-  background: url(../img/heroes_banner.png) no-repeat center top/cover;
+  background: url(../img/heroes_banner.png) no-repeat center center/cover;
 }
 
 #header {
@@ -96,4 +96,8 @@ aside {
   position: fixed;
   right: 20px;
   bottom: 0;
+}
+
+.home .ho::before {
+  content: "·";
 }
