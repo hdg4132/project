@@ -1,23 +1,14 @@
 body{
     height: 50vh;
     background: url(../img/heroes_banner.png) no-repeat;
-    background-position: center;
     background-size: cover;
 }
 
 div.local{
     float: left;
-    margin-top: -38px;
+    position: relative;
+    bottom: 300px;
     width: 240px;
-}
-
-div.local h2{
-    color: #fff;
-    font-weight: 800;
-    font-size: 2.167em;
-    font-family: sans-serif;
-    line-height: 1em;
-    text-transform: uppercase;
 }
 
 div.content {
@@ -26,15 +17,16 @@ div.content {
     padding: 0 20px;
     color: #8d8d8d;
     font-size: 1.25em;
+    display: block;
 }
 
 div.contentHead {
-	clear: both;
-	margin: 40px 0 60px;
+	margin: 0 0 40px;
 	line-height: 1;
 	text-align: center;
     position: relative;
     top: 30vh;
+    margin-left: 900px;
 }
 
 div.contentHead h3 {
@@ -50,8 +42,8 @@ div.contentHead h4 {
 }
 
 ul.magazineList{
-    width: 70%;
-    margin-left: 206px;
+    width: 800px;
+    margin-left: 700px;
     overflow: hidden;
     position: relative;
     top: 30vh;
@@ -90,4 +82,8 @@ ul.magazineList li>strong span strong {
 ul.magazineList li>a img {
 	width: 100%;
     height: 100%;
+}
+
+ul.magazineList li a img{
+    font-size: 14px;
 }
