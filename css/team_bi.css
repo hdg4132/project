@@ -100,5 +100,8 @@ article .em_tt{display: block; margin-bottom: 30px;}
 .uniform_li .uniform_con{display: none; padding-bottom: 80px;}
 .uniform_li .active .uniform_con{display: flex;}
 
-.go_top{position: fixed; right: 20px; bottom: 30px; cursor:pointer; transition:.3s}
+.go_top{position: fixed; right: 20px; bottom: 30px; cursor:pointer; transition:.3s; opacity:0; visibility: hidden; border:1px solid #ccc; width: 40px; height: 40px; background: #fff;}
+.go_top span{display: block; text-indent: -999em; width: 1px; height: 20px; background: #666; position: absolute; top: 50%; left: 50%; transform:translate(-50%,-40%);}
+.go_top span:after{content:''; width: 11px;height: 11px; border:1px solid #666; border-width:1px 1px 0 0; position: absolute; left: 50%; top: 0; transform:translateX(-52%) rotate(-45deg)}
+.go_top.active{opacity:1;visibility: visible;}
 .go_top.bottom{bottom: 140px; }

@@ -56,11 +56,15 @@ window.addEventListener('DOMContentLoaded', function(){
     })
     this.window.addEventListener('scroll', function(){
         //this.alert(footer.offsetHeight)
-        console.log(footer.offsetTop - footer.offsetHeight - 300 +':'+ window.scrollY)
-        if(this.window.scrollY > footer.offsetTop - footer.offsetHeight - 300){
-            go_top.classList.add('bottom')
+        if(this.window.scrollY > 100){
+            go_top.classList.add('active')
+            if(this.window.scrollY > footer.offsetTop - footer.offsetHeight - 600){
+                go_top.classList.add('bottom')
+            }else{
+                go_top.classList.remove('bottom')
+            }
         }else{
-            go_top.classList.remove('bottom')
+            go_top.classList.remove('active')
     
         }
     })
