@@ -10,8 +10,11 @@ header {
 #header {
   height: 438px;
 }
+
 header .fans {
   color: white;
+  margin-bottom: 7px;
+  font-weight: bold;
 }
 
 header .container {
@@ -24,9 +27,11 @@ header .container {
 .home ul {
   display: flex;
 }
+
 header li {
   list-style: none;
   color: grey;
+  font-size: 13px;
 }
 
 .container {
@@ -36,7 +41,9 @@ header li {
 }
 
 .menu {
-  line-height: 30px;
+  margin: 30px 40px 0 0;
+  line-height: 2.5rem;
+  cursor: pointer;
 }
 
 main {
@@ -47,45 +54,77 @@ main {
   width: 100%;
   text-align: center;
   line-height: 20px;
+  margin-bottom: 50px;
 }
 
-.ch-1 {
-  margin-bottom: 30px;
+.ch-1 h1 {
+  margin: 20px;
+  font-size: 32px;
 }
+
 .ch-1 p {
   font-size: 13px;
   color: grey;
 }
+
 #ch-2 {
   width: 100%;
   display: flex;
-  margin-bottom: 30px;
-  border: 1px solid black;
+  justify-content: space-between;
 }
 
-.ch-2 {
-  line-height: 30px;
+.ch-2 h2 {
+  color: rgb(135, 34, 34);
+  margin-bottom: 30px;
+  font-size: 25px;
 }
 
 .ch-2 p {
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 24px
 }
-.song1 p img {
+
+.ch-2 .che {
+  margin: 30px 0;
+}
+
+.song1 img {
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .sec {
   display: flex;
-  text-align: center;
   width: 100%;
-  border: 1px solid black;
+  margin: 50px 0;
+}
+
+.sec p {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.sec p::after {
+  content: "";
 }
 
 .sec div {
-  width: 33%;
+  width: 30%;
+  margin-right: 5%;
 }
+
+.sec div:last-child {
+  margin-right: 0;
+}
+
 .sec div audio {
   width: 100%;
+  margin-top: 5px;
+}
+
+#sec-1 {
+  margin: 50px 0 60px 0;
 }
 
 aside {
@@ -94,10 +133,66 @@ aside {
 
 .go-top {
   position: fixed;
-  right: 20px;
-  bottom: 0;
+  right: 350px;
+  bottom: 400px;
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  align-content: center;
 }
 
 .home .ho::before {
   content: "·";
 }
+
+.sec div button {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 2px;
+  padding: 5px;
+  color: rgba(128, 128, 128, 0.741);
+  cursor: pointer;
+}
+
+.sec div img {
+  width: 100%;
+}
+
+#sec-2,
+#sec-4 {
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+#sec-5 {
+  margin-bottom: 150px;
+}
+
+.sec .se {
+  position: relative;
+}
+
+.sec .se::after {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  top: 30px
+}
+
+#ch .ch-2 .ch-2-2 {
+  position: relative;
+}
+
+#ch .ch-2 .ch-2-2::after {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  top: 30px
+}
+
