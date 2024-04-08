@@ -81,7 +81,7 @@ main {
 
 .ch-2 p {
   font-size: 14px;
-  line-height: 24px
+  line-height: 24px;
 }
 
 .ch-2 .che {
@@ -180,7 +180,7 @@ aside {
   width: 20px;
   height: 2px;
   background-color: black;
-  top: 30px
+  top: 30px;
 }
 
 #ch .ch-2 .ch-2-2 {
@@ -188,11 +188,109 @@ aside {
 }
 
 #ch .ch-2 .ch-2-2::after {
+  content: "";
   position: absolute;
   display: block;
   width: 20px;
   height: 2px;
-  background-color: black;
-  top: 30px
+  background-color: rgb(135, 34, 34);
+  top: 45px;
+}
+
+.menu {
+  margin: 30px 40px 0 0;
+  line-height: 2.5rem;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.under > li {
+  font-size: 15px;
+  width: 250px;
+  position: relative;
+}
+.under > li:nth-child(1) {
+  border-bottom: 1px solid #aaa;
+}
+.under > li:nth-child(3) {
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+.under > li:nth-child(4) {
+  border-bottom: 1px solid #aaa;
+}
+
+.under > li a {
+  padding: 3px 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.submenu {
+  height: 0;
+  overflow: hidden;
+  font-size: 13px;
+  color: black;
+}
+
+.under > li:hover {
+  background-color: white;
+  transition-duration: 1s;
+  border-color: rgb(135, 34, 34);
+}
+
+.under > li:hover a {
+  color: rgb(135, 34, 34);
+}
+
+.under > li:hover .submenu {
+  background-color: #e5e5e5;
+  height: 125px;
+  transition-duration: 1s;
+  width: 250px;
+  border-top: 1px solid rgb(135, 34, 34);
+}
+.under > li:hover .submenu a {
+  color: black;
+  padding-left: 35px;
+}
+
+.under > li:hover .submenu a:hover {
+  color:rgb(135, 34, 34);
+}
+
+.under > li:before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #aaa;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  top: 23px;
+  left: 3px;
+}
+
+.under > li:hover:before {
+  background-color: rgb(135, 34, 34);
+}
+
+.under .ud:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 1px solid #aaa;
+  border-width: 1px 1px 0 0;
+  transform: rotate(135deg);
+  width: 5px;
+  height: 5px;
+  top: 20px;
+  right: 3px;
 }
 
