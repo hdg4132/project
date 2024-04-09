@@ -8,7 +8,7 @@ header {
 }
 
 #header {
-  height: 438px;
+  height: 320px;
 }
 
 header .fans {
@@ -71,6 +71,8 @@ main {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  height: 366px;
+  overflow: hidden;
 }
 
 .ch-2 h2 {
@@ -85,7 +87,7 @@ main {
 }
 
 .ch-2 .che {
-  margin: 30px 0;
+  margin: 35px 0;
 }
 
 .song1 img {
@@ -132,6 +134,7 @@ aside {
 }
 
 .go-top {
+  display: none;
   position: fixed;
   right: 350px;
   bottom: 400px;
@@ -140,6 +143,10 @@ aside {
   height: 50px;
   text-align: center;
   align-content: center;
+}
+
+.go-top.show {
+  display: block;
 }
 
 .home .ho::before {
@@ -249,19 +256,19 @@ aside {
   color: rgb(135, 34, 34);
 }
 
-.under > li:hover .submenu {
+.under > li.on .submenu {
   background-color: #e5e5e5;
   height: 125px;
   transition-duration: 1s;
   width: 250px;
   border-top: 1px solid rgb(135, 34, 34);
 }
-.under > li:hover .submenu a {
+.under > li .submenu li{
   color: black;
   padding-left: 35px;
 }
 
-.under > li:hover .submenu a:hover {
+.under > li .submenu li:hover {
   color:rgb(135, 34, 34);
 }
 
@@ -293,4 +300,3 @@ aside {
   top: 20px;
   right: 3px;
 }
-
