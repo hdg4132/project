@@ -3,21 +3,21 @@
   padding: 0;
 }
 
-header {
+.sub_banner {
   background: url(../img/heroes_banner.png) no-repeat center center/cover;
 }
 
-#header {
+.sub_banner #header {
   height: 320px;
 }
 
-header .fans {
+.sub_banner .fans {
   color: white;
   margin-bottom: 7px;
   font-weight: bold;
 }
 
-header .container {
+.sub_banner .container {
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -28,7 +28,7 @@ header .container {
   display: flex;
 }
 
-header li {
+.sub_banner li {
   list-style: none;
   color: grey;
   font-size: 13px;
@@ -244,7 +244,9 @@ aside {
   overflow: hidden;
   font-size: 13px;
   color: black;
+  transition-duration: 1s;
 }
+
 
 .under > li:hover {
   background-color: white;
@@ -259,7 +261,7 @@ aside {
 .under > li.on .submenu {
   background-color: #e5e5e5;
   height: 125px;
-  transition-duration: 1s;
+  
   width: 250px;
   border-top: 1px solid rgb(135, 34, 34);
 }

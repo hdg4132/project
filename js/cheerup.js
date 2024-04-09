@@ -1,11 +1,13 @@
 const side_menu = document.querySelectorAll(".menu .under > li");
 side_menu.forEach(function (item, index) {
-  item.addEventListener("click", function () {
-    if (this.classList.contains("on")) {
-      this.classList.remove("on");
-    } else {
-      this.classList.add("on");
-    }
+  item.addEventListener("click", function () { //아이템을 클릭할때 이벤트
+    /*
+    if (this.classList.contains("on")) { //만약에 이미 온 클래스가 있다면
+      this.classList.remove("on"); //this에서 온 클래스를 지워라
+    } else { //온 클래스가 ㅇ없다면
+      this.classList.add("on"); //this에 온 클래스를 추가해라
+    }*/
+    // this.classList.toggle("on");
   });
 });
 
@@ -28,4 +30,5 @@ go_top.addEventListener("click", function () {
 classList.add
 classList.remove
 classList.contains
+classList.toggle
 */
