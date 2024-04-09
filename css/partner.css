@@ -1,0 +1,451 @@
+body {
+    min-width: 1000px;
+    min-width: 1240px;
+    color: #555;
+    font: normal .75em / 1.45 'NanumBarunGothic', '돋움', Dotum, Arial, Tahoma, Geneva, Verdana;
+}
+
+#body {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 160px;
+    z-index: 2;
+}
+
+html, a, button, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, article, aside, hgroup, header, footer, figure, figcaption, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 96%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+div.local {
+    float: left;
+    margin-top: -38px;
+    width: 240px;
+}
+
+div.local h2 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 2.167em;
+    font-family: Rubik, sans-serif;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+ol, ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+#lnb>li.hasChild {
+    background: url(img/arrLnbDown.png) no-repeat 222px 19px;
+}
+
+#lnb>li>button {
+    display: block;
+    height: 45px;
+    padding-left: 16px;
+    color: #555;
+    font-size: 1.333em;
+    border-bottom: 1px solid #e5e5e5;
+    background: url(img/dot.png) no-repeat 0 50%;
+    line-height: 45px;
+    font-weight: bolder;
+}
+
+#lnb li li a {
+    display: block;
+    height: 35px;
+    padding-left: 35px;
+    font-size: 1.17em;
+    color: #555;
+    line-height: 35px;
+}
+
+button:link, button:visited, button:hover, button:active, button:focus {
+    text-decoration: none;
+    color: inherit;
+    line-height: 35px;
+    text-align: center;
+}
+
+#lnb>li>button.on, #lnb>li:hover>button, #lnb>li:focus>button {
+    border-bottom: 1px solid #8a0027;
+    color: #8a0027;
+    background: url(img/dot.png) no-repeat 0 50%;
+}
+
+#lnb li ul {
+    display: none;
+    padding: 15px 0 14px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #f4f4f4;
+}
+
+#lnb {
+    margin-top: 43px
+}
+
+#content {
+    float: right;
+    width: 710px;
+    margin: 0;
+}
+
+ol.location {
+    float: right;
+    height: 32px;
+    margin-top: -32px;
+}
+
+ol.location li:first-child {
+    padding-left: 15px;
+    background: url(img/dot.png) no-repeat 0 50%;
+}
+
+ol.location li {
+    float: left;
+    margin-left: 6px;
+    color: #b8b8b8;
+    font-size: 1.085em;
+    line-height: 32px;
+    overflow: visible;
+}
+
+ol.location li.here {
+    color: #555;
+    border-bottom: 1px solid #555;
+}
+
+.headWrap.heroes {
+    background: url(img/heroes_banner.png) no-repeat center
+}
+
+.headWrap {
+    height: 440px;
+}
+
+div.contentHead {
+    clear: both;
+    margin: 40px 0 60px;
+    line-height: 1;
+    text-align: center;
+}
+
+div.contentHead h3 {
+    margin-bottom: 14px;
+    color: #000;
+    font-size: 2.67em;
+    font-weight: 400;
+}
+
+div.contentHead p {
+    color: #b8b8b8;
+    font-size: 1.17em;
+}
+
+div.sponsor {
+    margin-bottom: 60px;
+    padding-bottom: 35px;
+    border-bottom: 1px dotted #999;
+    overflow: hidden;
+}
+
+div.sponsor>div {
+    float: left;
+    width: 240px;
+}
+
+div.sponsor * {
+    letter-spacing: -.0425em;
+}
+
+div.sponsor.main>div h4 {
+    margin-bottom: 20px;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+div.sponsor.main>div img + img {
+    margin-top: 30px;
+}
+
+div.sponsor.main>div span {
+    position: relative;
+    padding-top: 50px;
+}
+
+div.sponsor>div span {
+    display: block;
+    margin-bottom: 30px;
+    color: #8d8d8d;
+    font-size: 1.085em;
+}
+
+div.sponsor.main>div span:after {
+    content: ".";
+    position: absolute;
+    text-indent: -9999px;
+    top: 23px;
+    left: 0px;
+    display: block;
+    width: 22px;
+    height: 4px;
+    background: #003974;
+}
+
+div.sponsor.main>div .link-arg {
+    position: relative;
+    width: 172px;
+    height: 82px;
+    background: url(img/imgSponsorBanner.png) 0 0 no-repeat;
+}
+
+div.sponsor.main>div .link-arg .btnl {
+    top: 0px;
+    left: 0px;
+}
+
+div.sponsor.main>div .link-arg a {
+    position: absolute;
+    display: block;
+    text-indent: -9999px;
+    width: 88px;
+    height: 14px;
+    padding: 0px;
+    border-radius: 0px;
+    background: none;
+}
+
+div.sponsor.main>div .link-arg .btn2 {
+    top: 0px;
+    left: 85px;
+}
+
+div.sponsor.main>div .link-arg .btn3 {
+    top: 23px;
+    left: 0px;
+}
+
+div.sponsor.main>div .link-arg .btn4 {
+    top: 23px;
+    left: 85px;
+}
+
+div.sponsor.main>div .link-arg .btn5 {
+    top: 47px;
+    left: 0px;
+}
+
+div.sponsor.main>div .link-arg .btn6 {
+    top: 47px;
+    left: 85px;
+}
+
+div.sponsor.main>div .link-arg .btn7 {
+    top: 68px;
+    left: 0px;
+}
+
+div.sponsor.main .pt60 {
+    padding-top: 60px;
+}
+
+div.sponsor>p {
+    margin: 0 0 25px 270px;
+    color: #666;
+    font-size: 1.25em;
+    line-height: 1.6;
+    text-align: justify;
+    word-break: keep-all;
+}
+
+div.sponsor h4 {
+    float: left;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #000;
+    color: #000;
+    font-size: 1.085em;
+    font-weight: 800;
+    line-height: 1;
+}
+
+div.sponsor.gold h4 {
+    color: #ef9218;
+    border-color: #ef9218;
+}
+
+div.sponsor ul {
+    margin-left: 140px;
+}
+
+div.sponsor ul li {
+    float: left;
+    width: 20%;
+    height: 90px;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 1.085em;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: -.0425em;
+    white-space: nowrap;
+}
+
+div.sponsor ul li a {
+    display: block;
+    height: 50px;
+    margin-bottom: 1px;
+    line-height: 50px;
+}
+
+div.sponsor ul li a:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+
+div.sponsor.silver h4 {
+    color: #6b6f83;
+    border-color: #6b6f83;
+}
+
+div.sponsor ul li img {
+    max-width: 110px;
+    vertical-align: middle;
+}
+
+div.sponsor ul li a:after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+div.sponsor.bronze h4 {
+    color: #b24d1c;
+    border-color:#b24d1c
+}
+
+div.sponsor.general {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+div.sponsor.general h4 {
+    color: #999;
+    border-color: #999;
+}
+
+span.toTop {
+    position: fixed;
+    bottom: 404px;
+    left: 0;
+    width: 100%;
+    min-width: 1240px;
+    height: 43px;
+    z-index: -1;
+}
+
+a:link, a:visited, a:hover, a:active, a:focus {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+#body:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+div#top_btn {
+    display: block;
+    position: relative;
+    left: 50%;
+    overflow: hidden;
+    width: 55px;
+    height: 55px;
+    text-align: left;
+    text-indent: -10000em;
+    margin-left: 525px;
+    border: 1px solid #dfdfdf;
+    background: url("img/—Pngtree—up vector icon_4017364.png") no-repeat 50% 50%;
+}
+
+.accordion_body {
+    padding: 20px;
+    height: auto;
+}
+
+/* 아코디언 메뉴 - 테스트 */
+
+ul .hasChild {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  max-width: 500px;
+  width: 100%;
+  list-style: none;
+}
+
+li .hasChild{
+    display: block;
+    padding: 20px;
+    width: 100%;
+    color: #000;
+    text-align: left;
+    background-color: #ddd;
+    border: 0;
+    cursor: pointer;
+  }
+
+  li.button {
+    display: block;
+    padding: 20px;
+    width: 100%;
+    color: #000;
+    text-align: left;
+    background-color: #ddd;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .content .hasChild {
+    display: none;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+  }
+  
+  &.hasChild {
+    .button {
+      background-color: #fff;
+      font-weight: bold;
+    }
+    
+    .content  {
+      display: block;
+    }
+  }
+
