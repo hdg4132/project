@@ -19,12 +19,14 @@ body {
   font: normal .75em/1.45 'NanumBarunGothic', '돋움', Dotum, Arial, Tahoma, Geneva, Verdana;
 }
 
-header {
+.banner {
+  width: 100%;
   height: 440px;
   background: url('../img/fan_banner.png') no-repeat center center / cover;
 }
 
 main {
+  display: flex;
   width: 1000px;
   margin: 0 auto;
   padding-bottom: 160px;
@@ -52,6 +54,8 @@ div.local {
   float: left;
   margin-top: -30px;
   width: 240px;
+  flex-basis: 25%;
+  margin-right: 37px;
 }
 
 div.local h2 {
@@ -148,6 +152,7 @@ div.contentHead {
   margin: 40px 0 60px;
   line-height: 1;
   text-align: center;
+  flex-basis: 72%;
 }
 div.contentHead h3 {
     margin-bottom: 14px;
@@ -165,6 +170,7 @@ ul.magazineList {
   margin: 0 0 15px -16px;
   background: url('../img/bgMagazineList.png') repeat-y 100% 0;
   overflow: hidden;
+  margin-top: 30px;
 }
 
 ul.magazineList li{
