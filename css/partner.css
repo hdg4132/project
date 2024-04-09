@@ -13,7 +13,7 @@ body {
     z-index: 2;
 }
 
-html, a, button, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, article, aside, hgroup, header, footer, figure, figcaption, nav, section {
+html, a, button, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, article, aside, hgroup, header, figure, figcaption, nav, section {
     margin: 0;
     padding: 0;
     border: 0;
@@ -44,7 +44,7 @@ ol, ul {
 }
 
 #lnb>li.hasChild {
-    background: url(img/arrLnbDown.png) no-repeat 222px 19px;
+    background: url(../img/arrLnbDown.png) no-repeat 222px 19px;
 }
 
 #lnb>li>button {
@@ -54,7 +54,7 @@ ol, ul {
     color: #555;
     font-size: 1.333em;
     border-bottom: 1px solid #e5e5e5;
-    background: url(img/dot.png) no-repeat 0 50%;
+    background: url(../img/dot.png) no-repeat 0 50%;
     line-height: 45px;
     font-weight: bolder;
 }
@@ -78,7 +78,7 @@ button:link, button:visited, button:hover, button:active, button:focus {
 #lnb>li>button.on, #lnb>li:hover>button, #lnb>li:focus>button {
     border-bottom: 1px solid #8a0027;
     color: #8a0027;
-    background: url(img/dot.png) no-repeat 0 50%;
+    background: url(../img/dot.png) no-repeat 0 50%;
 }
 
 #lnb li ul {
@@ -106,7 +106,7 @@ ol.location {
 
 ol.location li:first-child {
     padding-left: 15px;
-    background: url(img/dot.png) no-repeat 0 50%;
+    background: url(../img/dot.png) no-repeat 0 50%;
 }
 
 ol.location li {
@@ -124,7 +124,7 @@ ol.location li.here {
 }
 
 .headWrap.heroes {
-    background: url(img/heroes_banner.png) no-repeat center
+    background: url(../img/heroes_banner.png) no-repeat center
 }
 
 .headWrap {
@@ -207,7 +207,7 @@ div.sponsor.main>div .link-arg {
     position: relative;
     width: 172px;
     height: 82px;
-    background: url(img/imgSponsorBanner.png) 0 0 no-repeat;
+    background: url(../img/imgSponsorBanner.png) 0 0 no-repeat;
 }
 
 div.sponsor.main>div .link-arg .btnl {
@@ -377,7 +377,7 @@ a:link, a:visited, a:hover, a:active, a:focus {
 }
 
 div#top_btn {
-    display: block;
+    display: none;
     position: relative;
     left: 50%;
     overflow: hidden;
@@ -387,7 +387,7 @@ div#top_btn {
     text-indent: -10000em;
     margin-left: 525px;
     border: 1px solid #dfdfdf;
-    background: url("img/—Pngtree—up vector icon_4017364.png") no-repeat 50% 50%;
+    background: url("../img/—Pngtree—up vector icon_4017364.png") no-repeat 50% 50%;
 }
 
 .accordion_body {
