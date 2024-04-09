@@ -23,11 +23,6 @@ go_top.addEventListener("click", function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-const text = document.querySelector()
-
-
-
-
 /*
 :hover 
 classList.add
