@@ -149,14 +149,12 @@ div.contentHead {
   line-height: 1;
   text-align: center;
 }
-
 div.contentHead h3 {
     margin-bottom: 14px;
     color: #000;
     font-size: 2.67em;
-    font-weight: 400;
+    font-weight: 600;
 }
-
 div.contentHead p {
     color: #b8b8b8;
     font-size: 1.17em;
@@ -177,6 +175,11 @@ ul.magazineList li{
   padding: 0 10px;
   background: url('../img/bgMagazineShadow.png') no-repeat 100% 32px;
 }
+
+ul.magazineLint li:hover{
+  filter: brightness(0.5);
+}
+
 ul.magazineList li>strong {
   display: block;
   height: 13px;
@@ -199,6 +202,7 @@ ul.magazineList li>a {
 ul.magazineList li>a img {
   width: 100%;
   height: 100%;
+  filter: brightness(1);
    &.new {
     position: absolute;
     top: 0;
@@ -207,6 +211,9 @@ ul.magazineList li>a img {
     height: auto;
     z-index: 15;
   }
+   &:hover{
+    filter: brightness(0.5);
+   }
 }
 
 ul.magazineList li>span {
