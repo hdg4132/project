@@ -123,6 +123,7 @@ ol.location {
   height: 32px;
   margin-top: -32px;
 }
+
 ol.location li {
     float: left;
     margin-left: 6px;
@@ -147,17 +148,20 @@ div.contentHead {
   margin: 40px 0 60px;
   line-height: 1;
   text-align: center;
-  h3 {
+}
+
+div.contentHead h3 {
     margin-bottom: 14px;
     color: #000;
     font-size: 2.67em;
     font-weight: 400;
-  }
-  p {
+}
+
+div.contentHead p {
     color: #b8b8b8;
     font-size: 1.17em;
-  }
 }
+
 
 ul.magazineList {
   margin: 0 0 15px -16px;
