@@ -1,0 +1,285 @@
+body{
+    font-family: "NanumBarunGothic";
+  }
+  
+  /* 캐러샐 */
+  
+  .carosel {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .carosel button {
+    z-index: 2;
+  }
+  
+  .carousel-indicators button{
+    z-index: 2;
+    margin-right: 10px;
+    border: #efefef;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .carousel-indicators [data-bs-target] {
+    margin-right: 10px;
+    border: #efefef;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* 슬릭 슬라이드용 css */
+  
+  #slider-div{
+    position: relative;
+    z-index: 2;
+  }
+  
+  .slick-dots {
+    z-index: 4;
+    position: absolute;
+    top: 86%;
+    left: 47%;
+    display: flex;
+  }
+  
+  .slick-dots li button{
+    border: 1px solid #efefef;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+  }
+  
+  .slick-dots li button:before {
+    color: transparent;
+  }
+  
+  .slick-dots li.slick-active button:before{
+    opacity: 1;
+    width: 11px;
+    height: 11px;
+    color: transparent;
+    border-radius: 5px;
+    background-color: #efefef;
+  }
+  
+  /* 히어로즈 바로가기 */
+  
+  .link_toolbar {
+    margin: 0 auto;
+  }
+  
+  .link_toolbar .link_toolbar-inner {
+    margin: 0 auto;
+    padding: 80px 0;
+    width: 1240px;
+    box-sizing: border-box;
+  }
+  
+  .link_toolbar h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px auto;
+  }
+  
+  .link_toolbar ul {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .bg {
+    background-color: #efefef;
+  }
+  
+  
+  /* 히어로즈 구단소식 */
+  
+  .club-news {
+    width: 100%;
+    max-width: 1240px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 80px 0;
+  }
+  
+  .inner h3 {
+    font-size: 30px;
+    display: flex;
+    font-weight: 700;
+    justify-content: space-between;
+  }
+  
+  .inner h3 a {
+    display: block;
+    padding-right: 35px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+  }
+  
+  .club-news .inner .item-list {
+    position: relative;
+    width: 100%;
+    max-width: 1240px;
+    padding-top: 30px;
+    box-sizing: border-box;
+  }
+  
+  .club-news .inner .item-list ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .club-news .inner .item-list ul li {
+    max-width: 295px;
+    border: 1px solid rgba(128, 128, 128, 0.846);
+  }
+  
+  .club-news .inner .item-list ul li a.item-box .photo {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .club-news .inner .item-list ul li a.item-box .txt-box .txt {
+    color: black;
+    height: 62px;
+    font-size: 22px;
+    line-height: 31px;
+    text-overflow: ellipsis;
+  }
+  
+  .club-news .inner .item-list ul li a.item-box .txt-box .date {
+    padding-top: 5px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #666;
+  }
+  
+  .club-news .inner .item-list ul li a.item-box:hover .txt-box .txt {
+    text-decoration: underline;
+  }
+  
+  .club-news .inner .item-list ul li a.item-box:hover .photo img {
+    animation: scaleSlow 0.2s ease-in;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes scaleSlow {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  
+  
+  /* 히어로즈 영상보기 */
+  
+  .club-movie {
+    max-width: 1240px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  
+  .club-movie ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .club-movie ul li {
+    width: 400px;
+  }
+  
+  .club-movie .inner {
+    padding-bottom: 80px;
+  }
+  
+  .club-movie .inner .movie .txt-box .txt {
+    color: black;
+    height: 62px;
+    font-size: 22px;
+    line-height: 31px;
+    text-overflow: ellipsis;
+  }
+  
+  .club-movie .inner .movie:hover .txt-box .txt {
+    text-decoration: underline;
+  }
+  
+  .club-movie .inner .movie:hover .photo {
+    overflow: hidden;
+  }
+  
+  .club-movie .inner .movie:hover .photo img {
+    animation: scaleSlow 0.2s ease-in;
+    animation-fill-mode: forwards;
+  }
+  
+  /* all-about  */
+  
+  .all-about {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    background: url(../img/bg_all_about.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #efefef;
+  }
+  
+  .all-about dl {
+    position: relative;
+    width: 100%;
+    max-width: 1240px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .all-about h3 {
+    font-size: 38px;
+    font-weight: 700;
+  }
+  
+  .all-about p {
+    font-size: 18px;
+  }
+  
+  .all-about dd ul {
+    width: 100%;
+    font-size: 60px;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .all-about dd ul li {
+    margin: 0 30px;
+  }
+  
+  .all-about dd ul li i {
+    color: #555;
+  }
+  
+  .all-about dd ul li a:hover{
+    filter: brightness(1.1);
+  }
+  
