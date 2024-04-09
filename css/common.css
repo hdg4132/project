@@ -8,6 +8,16 @@ a {
     list-style: none;
   }
   
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    background: transparent;
+  }
+
   /* 헤더 */
   
   header {
@@ -190,7 +200,7 @@ a {
     height: 74px;
     /* flex: 1; */
     position: absolute;
-    top: 35%;
+    top: 55%;
     left: 80px;
     transform: translateY(-50%);
     transition: left 0.5s;
