@@ -7,7 +7,7 @@ side_menu.forEach(function (item, index) {
     } else { //온 클래스가 ㅇ없다면
       this.classList.add("on"); //this에 온 클래스를 추가해라
     }*/
-    // this.classList.toggle("on");
+    this.classList.toggle("on");
   });
 });
 
