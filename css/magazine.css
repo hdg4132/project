@@ -1,134 +1,236 @@
-body{
-    position:relative;
-    margin:0 auto;
-    padding-bottom:160px;
-    z-index:2;
+:root {
+  --accent-color: #8a0027;
 }
 
-header img{
-    width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
 }
 
-div.container {
-    margin: 0 auto;
-    width: 1000px;
-    margin-bottom: 80px;
-    padding: 0 20px;
-    color: #8d8d8d;
-    display: block;
+body {
+  display: block;
+  clear: both;
+  min-width: 1240px;
+  font: normal .75em/1.45 'NanumBarunGothic', '돋움', Dotum, Arial, Tahoma, Geneva, Verdana;
 }
 
-div.container h2{
-    color:#fff;
-    font-weight:800;
-    font-size:2.167em;
-    font-family:Rubik, sans-serif;
-    line-height:1em;
-    text-transform:uppercase;
-    margin-top: -55px;
+header {
+  height: 440px;
+  background: url('../img/fan_banner.png') no-repeat center center / cover;
 }
 
-ol.location{
-    list-style: none;
-    text-align: right;
-    margin-top: -40px;
+main {
+  width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 160px;
+  z-index: 2;
 }
 
-div.local{
+main::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+ol, ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+a:link, a:visited, a:hover, a:active, a:focus {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+div.local {
+  float: left;
+  margin-top: -30px;
+  width: 240px;
+}
+
+div.local h2 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 2.167em;
+  font-family: Rubik, sans-serif;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+
+ul#lnb {
+  margin-top: 43px;
+  > li {
+    &.hasChild {
+      background: url('../img/arrLnbDown.png') no-repeat 222px 19px;
+    }
+    &:hover > a.on,
+    &:is(:focus, :hover) > a {
+      border-bottom: 1px solid var(--accent-color);
+      color: var(--accent-color);
+      background: url('../img/dotLnbOn.png') no-repeat 0 50%;
+    }
+    > a {
+      display: block;
+      height: 45px;
+      padding-left: 16px;
+      color: #555;
+      font-size: 1.333em;
+      border-bottom: 1px solid #e5e5e5;
+      background: url('../img/dotLnbOff.png') no-repeat 0 50%;
+      line-height: 45px;
+    }
+  }
+  li {
+    ul {
+      display: block;
+      padding: 15px 0 14px;
+      border-bottom: 1px solid #e5e5e5;
+      background-color: #f4f4f4;  
+    }
+    li {
+      a {
+        display: block;
+        height: 35px;
+        padding-left: 35px;
+        font-size: 1.167em;
+        color: #555;
+        line-height: 35px;
+      }
+      a.on, 
+      &:hover a, 
+      &:focus a {
+        color: var(--accent-color);
+      }
+    }
+  }
+}
+
+div#content {
+  float: right;
+  width: 710px;
+  margin: 0;
+}
+
+ol.location {
+  float: right;
+  height: 32px;
+  margin-top: -32px;
+}
+ol.location li {
     float: left;
-    position: relative;
-    bottom: 300px;
-    width: 240px;
+    margin-left: 6px;
+    color: #b8b8b8;
+    font-size: 1.085em;
+    line-height: 32px;
+    overflow: visible;
 }
 
+ol.location li:first-child {
+  padding-left: 15px;
+  background: url('../img/dotLocation.png') no-repeat 0 50%;
+}
+
+ol.location li.here {
+  color: #555;
+  border-bottom: 1px solid #555;
+}
 
 div.contentHead {
-	text-align: center;
-    position: relative;
-    left: 150px;
-    top: 40px;
+  clear: both;
+  margin: 40px 0 60px;
+  line-height: 1;
+  text-align: center;
+  h3 {
+    margin-bottom: 14px;
+    color: #000;
+    font-size: 2.67em;
+    font-weight: 400;
+  }
+  p {
+    color: #b8b8b8;
+    font-size: 1.17em;
+  }
 }
 
-div.contentHead h3 {
-	margin-bottom: 14px;
-	color: #000;
-	font-size: 32px;
-	font-weight: bold;
-}
-
-div.contentHead p {
-	color: #b8b8b8;
-	font-size: 17px;
-}
-
-#lnb{
-    margin: -80px 50px 0px 0px;
-}
-
-#lnb>li>a{
-    text-align: left;
-    display: block;
-    height: 45px;
-    padding-left: 14px;
-    color: #555;
-    font-size: 20px;
-    border-bottom: 1px solid #e5e5e5;
-    width: 200px;
-    margin: 20px 0px;
-    line-height: 35px;
-    text-decoration-line: none;
-}
-
-#lnb>li>a.on,
-#lnb>li:hover>a,
-#lnb>li:focus>a{
-    border-bottom:1px solid #8a0027;
-    color:#8a0027;
-}
-
-ul.magazineList{
-    display: block;
-    width: 800px;
-    position: relative;
-    left: 250px;
-    bottom: 100px;
+ul.magazineList {
+  margin: 0 0 15px -16px;
+  background: url('../img/bgMagazineList.png') repeat-y 100% 0;
+  overflow: hidden;
 }
 
 ul.magazineList li{
-    float: left;
-    width: 206px;
-    height: 293px;
-    margin-left: 16px;
-    margin-bottom: 80px;
-    padding: 0 10px;
-    text-align: center;
-    list-style: none;
+  float: left;
+  width: 206px;
+  height: 386px;
+  margin-left: 16px;
+  padding: 0 10px;
+  background: url('../img/bgMagazineShadow.png') no-repeat 100% 32px;
 }
-
 ul.magazineList li>strong {
-	display: block;
-	height: 13px;
-	margin-bottom: 19px;
-	color: #666;
-	font-weight: 400;
-	font-size: 10px;
-	line-height: 13px;
-	text-align: center;
+  display: block;
+  height: 13px;
+  margin-bottom: 19px;
+  color: #666;
+  font-weight: 400;
+  font-size: 1.085em;
+  line-height: 13px;
+  text-align: center;
 }
 
-ul.magazineList li>strong span {
-	font-size: .845em;
-}
-
-ul.magazineList li>strong span strong {
-	font-weight: 700;
+ul.magazineList li>a {
+  position: relative;
+  display: block;
+  width: 206px;
+  height: 293px;
+  overflow: hidden;
 }
 
 ul.magazineList li>a img {
-	width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+   &.new {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    z-index: 15;
+  }
 }
 
-ul.magazineList li a img{
-    font-size: 14px;
+ul.magazineList li>span {
+  display: none;
+  position: absolute;
+  bottom: -105px;
+  left: 6px;
+  width: 194px;
+  height: 99px;
+  padding: 0 8px;
+  box-sizing: border-box;
+  background: none;
+  line-height: 1;
+  letter-spacing: -.0425em;
+  text-align: center;
+  z-index: 10;
+}
+
+ul.magazineList li>span.curtain {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 1px solid #cf0b42;
+  box-sizing: border-box;
+  background: url('../img/bgCurtain.png') repeat 0 0;
+  z-index: 1;
 }
