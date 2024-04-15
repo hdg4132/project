@@ -1,11 +1,343 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/main.css" />
     
-</body>
+    <title>KIWOOM HEROS</title>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <nav class="global-nav" >
+        <a href="#">로그인</a>
+        <a href="#">회원가입</a>
+        <a href="#">안내 및 Q&A</a>
+        <a href="#"><img src="img/btnShop.png">SHOP</a>
+        <a class="sns" href="#"><img src="img/top_sns1.png"></a>
+        <a class="sns" href="#"><img src="img/top_sns2.png"></img></a>
+        <a class="sns" href="#"><img src="img/top_sns3.png"></img></a>
+        <form>
+        <input type="text" placeholder="검색어를 입력하세요      " />
+        <button type="submit"><img src="img/btnSearchWhite.png"></button>
+      </form>
+      </nav>
+      <nav id="magaheader" class="magaheader">
+        <h1>
+        <a href="index.html"
+            ><img id="kiwoom" src="img/logo.png" />
+            <img id="kiwoom2" src="img/logo_fix.png"
+        /></a>
+        </h1>
+        <ul class="depth1">
+            <li ><a  href="team_bi.html"><span >HEROES</span></a> </li>
+            <li ><a  href="#"><span >PLAYERS</span></a> </li>
+            <li ><a  href="#"><span >GAMES</span></a>  </li>
+            <li ><a  href="#"><span >STATS</span></a>  </li>
+            <li ><a href="#"><span >STORY</span></a>  </li>
+            <li ><a  href="fans-magazine.html"><span>FANS</span></a>  </li>
+            <li><a href="#"><span>TICKET</span></a>   </li>
+        </ul>
+        <div class="depth2">
+            <div class="box">
+                <dl><a href="team_bi.html"><span>HEROES</span></a>
+                    <dt><a href="team_bi.html">구단 BI</a></dt>
+                    <dt><a href="">구단 파트너</a></dt>
+                </dl>
+                <dl><a href="#"><span>PLAYERS</span></a></dl>
+                <dl><a href="#"><span>GAMES</span></a></dl>
+                <dl><a href="#"><span>STATS</span></a></dl>
+                <dl><a href="#"><span>STORY</span></a></dl>
+                <dl>
+                  <a href="fans-magazine.html">FANS</a>
+                  <dt><a href="fans-magazine.html">Fans-magazine</a></dt>
+                </dl>
+                <dl class="dl-l"><a href="#"><span>TICKET</span></a></dl>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <body>
+        <div class="carosel">
+            <div id="slider-div">
+              <div><a href="#"><img src="img/main_banner1.jpg"></a></div>
+              <div><a href="#"><img src="img/main_banner2.jpg"></a></div>
+              <div><a href="#"><img src="img/main_banner3.jpg"></a></div>
+              <div><a href="#"><img src="img/main_banner4.jpg"></a></div>
+            </div>
+      </div>
+    <main>
+      <div class="link_toolbar">
+        <div class="link_toolbar-inner">
+          <h3>히어로즈 바로가기</h3>
+          <ul>
+            <li>
+              <a href="#"><img src="img/btn_link_toolbar_item1.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/btn_link_toolbar_item2.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/btn_link_toolbar_item3.png" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="bg">
+        <div class="club-news">
+          <div class="inner">
+            <h3>
+              <strong>히어로즈 구단 소식</strong>
+              <a href="#">더보기 <i class="fa-solid fa-plus"></i></a>
+            </h3>
+            <div class="item-list">
+              <ul>
+                <li>
+                  <a href="#" class="item-box">
+                    <div class="photo">
+                      <img
+                        src="img/news1.jpg"
+                        height="219"
+                        width="100%"
+                        alt=""
+                      />
+                    </div>
+                    <div class="txt-box">
+                      <div class="txt">
+                        5일(금) 한화전 걸그룹 ‘엑신’ 시구 및 시타
+                      </div>
+                      <div class="date">2024-04-03</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="item-box">
+                    <div class="photo">
+                      <img
+                        src="img/news2.png"
+                        height="219"
+                        width="100%"
+                        alt=""
+                      />
+                    </div>
+                    <div class="txt-box">
+                      <div class="txt">구로희망복지재단과 업무협약 체결</div>
+                      <div class="date">2024-04-01</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="item-box">
+                    <div class="photo">
+                      <img
+                        src="img/news3.png"
+                        height="219"
+                        width="100%"
+                        alt=""
+                      />
+                    </div>
+                    <div class="txt-box">
+                      <div class="txt">
+                        2024 KBO리그 정규시즌 중계일정(4.2 ~ 4.7)
+                      </div>
+                      <div class="date">2024-03-30</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="item-box">
+                    <div class="photo">
+                      <img
+                        src="img/news4.jpg"
+                        height="219"
+                        width="100%"
+                        alt=""
+                      />
+                    </div>
+                    <div class="txt-box">
+                      <div class="txt">31일(일) LG전 가수 방예담 시구</div>
+                      <div class="date">2024-03-29</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="club-movie">
+          <div class="inner">
+            <h3>
+              <strong>히어로즈 영상</strong>
+              <a href="#">더보기 <i class="fa-solid fa-plus"></i></a>
+            </h3>
+            <ul>
+              <li>
+                <a href="#" class="movie">
+                  <div class="photo">
+                    <img
+                      src="img/video1.jpg"
+                      height="219"
+                      width="100%"
+                      alt=""
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <div class="txt">
+                      [미공개영상] 랍스터 먹으며 피어난 나이 논쟁💥
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="movie">
+                  <div class="photo">
+                    <img
+                      src="img/video2.jpg"
+                      height="219"
+                      width="100%"
+                      alt=""
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <div class="txt">드디어 모셨습니다... 밀리좌 (03.30)</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="movie">
+                  <div class="photo">
+                    <img
+                      src="img/video3.jpg"
+                      height="219"
+                      width="100%"
+                      alt=""
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <div class="txt">
+                      뜨거웠던 홈 개막전! 위닝시리즈 하이라이트
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="all-about">
+        <dl>
+          <dt>
+            <h3>All about KIWOOM HEROES</h3>
+            <p>히어로즈의 다양한 채널과 함께하세요.</p>
+          </dt>
+          <dd>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+    </main>
+    <footer>
+      <div class="scroll-top">
+        <button><i class="fa-solid fa-arrow-up"></i></button>
+      </div>
+      <div class="sponser">
+        <h2>SPONSORS</h2>
+        <div class="sponser-banner">
+          <div class="main-sponser">
+            <a href="#"><img src="img/bnrSponsorMain.png" /></a>
+          </div>
+          <div class="sponser-wrap">
+            <div id="sponser-div">
+                <div><a href="#"><img src="img/partner1.png"></a></div>
+                <div><a href="#"><img src="img/partner2.png"></a></div>
+                <div><a href="#"><img src="img/partner3.png"></a></div>
+                <div><a href="#"><img src="img/partner4.png"></a></div>
+                <div><a href="#"><img src="img/partner5.png"></a></div>
+                <div><a href="#"><img src="img/partner6.png"></a></div>
+                <div><a href="#"><img src="img/partner7.png"></a></div>
+                <div><a href="#"><img src="img/partner8.png"></a></div>
+                <div><a href="#"><img src="img/partner9.png"></a></div>
+                <div><a href="#"><img src="img/partner10.png"></a></div>
+                <div><a href="#"><img src="img/partner11.png"></a></div>
+                <div><a href="#"><img src="img/partner12.png"></a></div>
+                <div><a href="#"><img src="img/partner13.png"></a></div>
+                <div><a href="#"><img src="img/partner14.png"></a></div>
+                <div><a href="#"><img src="img/partner15.png"></a></div>
+                <div><a href="#"><img src="img/partner16.png"></a></div>
+                <div><a href="#"><img src="img/partner17.png"></a></div>
+                <div><a href="#"><img src="img/partner18.png"></a></div>
+                <div><a href="#"><img src="img/partner19.png"></a></div>
+                <div><a href="#"><img src="img/partner20.png"></a></div>
+                <div><a href="#"><img src="img/partner21.png"></a></div>
+                <div><a href="#"><img src="img/partner22.png"></a></div>
+                <div><a href="#"><img src="img/partner23.png"></a></div>
+                <div><a href="#"><img src="img/partner24.png"></a></div>
+                <div><a href="#"><img src="img/partner25.png"></a></div>
+                <div><a href="#"><img src="img/partner26.png"></a></div>
+                <div><a href="#"><img src="img/partner27.png"></a></div>
+                <div><a href="#"><img src="img/partner28.png"></a></div>
+                <div><a href="#"><img src="img/partner29.png"></a></div>
+                <div><a href="#"><img src="img/partner30.png"></a></div>
+                <div><a href="#"><img src="img/partner31.png"></a></div>
+                <div><a href="#"><img src="img/partner32.png"></a></div>
+                <div><a href="#"><img src="img/partner33.png"></a></div>
+                <div><a href="#"><img src="img/partner34.png"></a></div>
+                <div><a href="#"><img src="img/partner35.png"></a></div>
+              </div>
+          </div>
+          </div>
+          </div>
+      <div class="footer-wrap">
+        <div class="list-box">
+          <div class="item-box">
+            <ul>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">이메일무단수집거부</a></li>
+              <li><a href="#">안내 및 Q&A</a></li>
+              <li><a href="#">사이트맵</a></li>
+            </ul>
+            <p>
+              <small
+                >서울특별시 구로구 경인로 430(고척동, 고척스카이돔구장내)
+                <br />
+                T.02-3660-1000 F.02-3660-1099 Copyright (C) Heroes, All Rights
+                Reserved.</small
+              >
+            </p>
+          </div>
+          <div class="item-box">
+            <img src="img/txt_footer.png" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

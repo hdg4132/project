@@ -13,7 +13,7 @@ body{font-size:16px; font-family: 'NanumBarunGothic','Roboto', sans-serif; color
 .container_fix{width: 1030px; max-width:100%; padding: 0 15px; margin: 0 auto;}
 
 
-.sub_banner{background: url(../img/heroes_banner.png) no-repeat center bottom; height: 400px; position: relative; margin-bottom: 40px;}
+.sub_banner{background: url(../img/heroes_banner.png) no-repeat center bottom/cover; height: 400px; position: relative; margin-bottom: 40px;}
 .sub_btt{position: absolute; bottom: 0; left: 0; right: 0; padding: 10px 0;}
 .sub_btt > div{display: flex; justify-content: space-between; align-items: flex-end;}
 .sub_btt h2{color:#fff; font-size:26px; font-weight:600; text-transform: uppercase; }
