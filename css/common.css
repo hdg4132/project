@@ -162,6 +162,18 @@ a {
   header .magaheader .depth2 .box .dl-l{
     border-right: none;
   }
+
+  header .magaheader .depth2 .box dl dt{
+    width: 100%;
+    height: 55px;
+  }
+
+  header .magaheader .depth2 .box dl dt a{
+    font-size: 17px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
   
   header .magaheader .depth2 .box dl span{
     width: 100%;
@@ -175,7 +187,7 @@ a {
     position: relative;
     margin: 0 auto;
     width: 120px;
-    height: 103px;
+    /* height: 103px; */
     color: #ffffff;
     font-size: 24px;
     /* font-weight: bolder; */
@@ -185,6 +197,10 @@ a {
     justify-content: right;
   }
   
+  header .magaheader>a{
+    width: 120px;
+    height: 103px;
+  }
   
   header .magaheader .depth1 a:hover {
     color: burlywood;
@@ -196,7 +212,9 @@ a {
 
   /* 240415 서브하위메뉴 추가 sjh */
   header .magaheader a{justify-content: center;}
-  header .magaheader .depth2 dt a{font-size:16px; font-weight:400; justify-content: flex-start; padding: 15px 0 15px; height: auto; display: block; width:100%; text-align: center;}
+  
+  header .magaheader .depth2 dd{margin-left: 0;}
+  header .magaheader .depth2 dd a{font-size:16px; font-weight:400; justify-content: flex-start; padding: 15px 0 15px; height: auto; display: block; width:100%; text-align: center;}
   /* 240415 서브하위메뉴 추가 sjh */
 
   header .magaheader h1 {
@@ -392,6 +410,10 @@ a {
     display: block;
     transform: translateY(-150%);
   }
+
+  header.active .magaheader h1{
+    top:90px;
+  }
   
   header .magaheader.active .depth2 {
     height: 500px;
@@ -418,3 +440,4 @@ a {
     transition-delay: 0.35s;
   }
   
+

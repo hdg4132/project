@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -18,8 +19,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/magazine.css" />
-    <title>구단 매거진</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/cheerup.css" />
   </head>
   <body>
     <header id="header" class="header">
@@ -48,7 +49,7 @@
           <li ><a  href="#"><span >PLAYERS</span></a> </li>
           <li ><a  href="#"><span >GAMES</span></a>  </li>
           <li ><a  href="#"><span >STATS</span></a>  </li>
-          <li ><a href="partner.html"><span>PARTNER</span></a>  </li>
+          <li ><a href="partner.html"><span >PARTNER</span></a>  </li>
           <li ><a  href="fans-magazine.html"><span>FANS</span></a>  </li>
           <li><a href="#"><span>TICKET</span></a>   </li>
       </ul>
@@ -79,162 +80,172 @@
                 <dt><a href="kumrin2.html">큠린이</a></dt>
               </dl>
           </div>
-    </div>
+        </div>
       </nav>
     </header>
-    <div class="banner"></div>
-    <main>
-      <!-- 좌측 메뉴 -->
-      <div class="local">
-        <h2>FANS</h2>
-        <ul id="lnb">
-          <li><a href="#">영웅게시판</a></li>
-          <li class="hasChild">
-            <a href="#">다운로드</a>
+    <div class="sub_banner">
+      <div id="header">
+        <div class="container">
+          <div class="fans">
+            <h2>FANS</h2>
+          </div>
+          <div class="home">
+            <pre>
             <ul>
-              <li>
-                <a href="#" class="on">구단 매거진</a>
-              </li>
-              <li><a href="#" class="">월페이퍼</a></li>
+              <li class="home_li">Home /</li>
+              <li> Fans /</li>
+              <li><strong> 응원가</strong></li>
             </ul>
-          </li>
-          <li class="hasChild">
-            <a href="#">응원단</a>
-            <ul>
-              <li><a href="#">응원단 소개</a></li>
-              <li><a href="#">응원가</a></li>
-              <li><a href="#">선수 응원가</a></li>
-            </ul>
-          </li>
-          <li><a href="#">안내 Q&A</a></li>
-        </ul>
+            </pre>
+          </div>
+        </div>
       </div>
-        <div class="contentHead">
-          <h3>구단 매거진</h3>
-          <p>
-            지치지 않는 응원과 함성. 키움히어로즈의 으뜸 파트너는 팬
-            여러분입니다.
-          </p>
-          <!-- 포스터 -->
-        <ul class="magazineList">
-          <li>
-            <strong>2019 히어로즈 베이스볼 매거진 8호 </strong>
-            <a href="#magazine1" class="">
-              <img
-                id="magazineImage1"
-                src="img/magazine1.jpg"
-                alt="2019 히어로즈 베이스볼 매거진 8호 "
-              />
-              <img src="img/magazine_new.png" alt="New" class="new" />
-              <span id="magazine1" style="bottom: -105px"></span>
-              <span class="curtain"></span>
-            </a>
-          </li>
-          <li>
-            <strong>2019 히어로즈 베이스볼 매거진 7호 </strong>
-            <a href="#magazine2" class="">
-              <img
-                id="magazineImage2"
-                src="img/magazine2.jpg"
-                alt="2019 히어로즈 베이스볼 매거진 7호 "
-              />
-              <span id="magazine1" style="bottom: -105px"> </span>
-              <span class="curtain"></span>
-            </a>
-          </li>
-          <li>
-            <strong>2019 히어로즈 베이스볼 매거진 6호 </strong>
-            <a href="#magazine3" class="">
-              <img
-                id="magazineImage3"
-                src="img/magazine3.jpg"
-                alt="2019 히어로즈 베이스볼 매거진 6호 "
-              />
-              <span id="magazine1" style="bottom: -105px"> </span>
-              <span class="curtain"></span>
-            </a>
-          </li>
-          <li>
-            <strong>2019 히어로즈 베이스볼 매거진 5호 </strong>
-            <a href="#magazine4" class="">
-              <img
-                id="magazineImage4"
-                src="img/magazine4.jpg"
-                alt="2019 히어로즈 베이스볼 매거진 5호 "
-              />
-              <span id="magazine1" style="bottom: -105px"> </span>
-              <span class="curtain"></span>
-            </a>
-          </li>
-          <li>
-            <strong>2019 히어로즈 베이스볼 매거진 4호 </strong>
-            <a href="#magazine5" class="">
-              <img
-                id="magazineImage5"
-                src="img/magazine5.jpg"
-                alt="2019 히어로즈 베이스볼 매거진 4호 "
-              />
-              <span id="magazine1" style="bottom: -105px"> </span>
-              <span class="curtain"></span>
-            </a>
-          </li>
-          <li>
-            <strong>2019 히어로즈 베이스볼 매거진 3호 </strong>
-            <a href="#magazine6" class="">
-              <img
-                id="magazineImage6"
-                src="img/magazine6.jpg"
-                alt="2019 히어로즈 베이스볼 매거진 3호 "
-              />
-              <span id="magazine1" style="bottom: -105px"> </span>
-              <span class="curtain"></span>
-            </a>
-          </li>
-          <li>
-            <strong>2019 히어로즈 베이스볼 매거진 2호 </strong>
-            <a href="#magazine7" class="">
-              <img
-                id="magazineImage7"
-                src="img/magazine7.jpg"
-                alt="2019 히어로즈 베이스볼 매거진 2호 "
-              />
-              <span id="magazine1" style="bottom: -105px"> </span>
-              <span class="curtain"></span>
-            </a>
-          </li>
-          <li>
-            <strong>[웹진/9-10월호]</strong>
-            <a href="#magazine8" class="">
-              <img
-                id="magazineImage8"
-                src="img/magazine8.jpg"
-                alt="[웹진/9-10월호]"
-              />
-              <span id="magazine1" style="bottom: -105px"> </span>
-              <span class="curtain"></span>
-            </a>
-          </li>
-          <li>
-            <strong>2019 히어로즈 베이스볼 매거진 1호 </strong>
-            <a href="#magazine9" class="">
-              <img
-                id="magazineImage9"
-                src="img/magazine9.jpg"
-                alt="2019 히어로즈 베이스볼 매거진 1호 "
-              />
-              <span id="magazine1" style="bottom: -105px"> </span>
-              <span class="curtain"></span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      </div>
-    </main>
+    </div>
+    <div class="container">
+      <aside>
+        <div class="side_menu">
+          <ul class="list_style">
+            <li><a href="#">영웅게시판</a></li>
+            <li>
+              <a class="dropdown" href="#">다운로드</a>
+              <ul class="submenu">
+                <li>구단 매거진</li>
+                <li>월페이퍼</li>
+              </ul>
+            </li>
+            <li>
+              <a class="dropdown" href="#">응원단</a>
+              <ul class="submenu">
+                <li>응원단 소개</li>
+                <li>응원가</li>
+                <li>선수 응원가</li>
+              </ul>
+            </li>
+            <li><a href="#">안내 및 Q&A</a></li>
+          </ul>
+        </div>
+      </aside>
+      <main>
+        <section id="section">
+          <div id="section_1">
+            <div class="title">
+              <h1>응원가</h1>
+              <p>키움히어로즈는 젊은 패기와 도전으로 꿈을 향해 뛰겠습니다.</p>
+            </div>
+            <div id="text">
+              <div class="txt_content">
+                <h2 class="new">New Heores Come Here</h2>
+                <p class="txt_bold">
+                  Everybody 키움 가슴 속에 우릴 느껴봐 Heroes come here!<br />
+                  You are my hero! 우린 꿈을 키우는 키움 히어로즈!
+                </p>
+                <p class="txt_tt">
+                  소릴 높이 외쳐봐! 승리 향해 히어로!<br />
+                  키움 히어로즈! 크게 소리쳐봐! 키움!<br />
+                </p>
+                <p class="txt_tt">
+                  히어로즈 키움 히어로 히어로즈 승리의 그 이름<br />
+                  히어로즈 키움 히어로 히어로즈 승리 향해 히어로즈!!
+                </p>
+                <p class="txt_bold">
+                  Everybody 키움 가슴 속에 우릴 느껴봐 Heroes come here!<br>
+                </div>
+              
+              
+              
+              <div class="song_1">
+                <p><img src="img/song1.png" alt="song1" /></p>
+                <audio src="" controls=""></audio>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="section_2">
+          <div class="song">
+            <div>
+              <p class="song_title">하늘 끝까지</p>
+              <img src="img/song2.png" alt="" />
+              <p><audio src="" controls=""></audio></p>
+              <button>가사보기</button>
+            </div>
+            <div>
+              <p class="song_title">영웅출정가</p>
+              <img src="img/song3.png" alt="" />
+              <p><audio src="" controls=""></audio></p>
+              <button>가사보기</button>
+            </div>
+            <div>
+              <p class="song_title">기를 높여라</p>
+              <img src="img/song4.png" alt="" />
+              <p><audio src="" controls=""></audio></p>
+              <button>가사보기</button>
+            </div>
+          </div>
+        </section>
+        <section id="section_3">
+          <div class="song">
+            <div>
+              <p class="song_title">꿈이여 하나가 되자</p>
+              <img src="img/song5.png" alt="" />
+              <p><audio src="" controls=""></audio></p>
+              <button>가사보기</button>
+            </div>
+            <div>
+              <p class="song_title">승리가(歌)</p>
+              <img src="img/song6.png" alt="" />
+              <p><audio src="" controls=""></audio></p>
+              <button>가사보기</button>
+            </div>
+            <div>
+              <p class="song_title">승리를 위하여</p>
+              <img src="img/song7.png" alt="" />
+              <p><audio src="" controls=""></audio></p>
+              <button>가사보기</button>
+            </div>
+          </div>
+        </section>
+        <section id="section_4">
+          <div class="song">
+            <div>
+              <p class="song_title">우리가 승리한다</p>
+              <img src="img/song8.png" alt="" />
+              <p><audio src="" controls=""></audio></p>
+              <button>가사보기</button>
+            </div>
+            <div>
+              <p class="song_title">오 키움, 키움 히어로즈</p>
+              <img src="img/song9.png" alt="" />
+              <p><audio src="" controls=""></audio></p>
+              <button>가사보기</button>
+            </div>
+            <div>
+              <p class="song_title">사랑한다 키움</p>
+              <img src="img/song10.png" alt="" />
+              <p><audio src="" controls=""></audio></p>
+              <button>가사보기</button>
+            </div>
+          </div>
+        </section>
+        <section id="section_5">
+          <div class="song">
+            <div>
+              <p class="song_title">우리가 승리한다</p>
+              <img src="img/song8.png" alt="" />
+              <p><audio src="" controls=""></audio></p>
+              <button>가사보기</button>
+            </div>
+            <div>
+              <p class="song_title">오 키움, 키움 히어로즈</p>
+              <img src="img/song9.png" alt="" />
+              <p><audio src="" controls=""></audio></p>
+              <button>가사보기</button>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
     <footer>
-      <div class="scroll-top">
-        <button><i class="fa-solid fa-arrow-up"></i></button>
-      </div>
+      <div class="go-top">↑</div>
       <div class="sponser">
         <h2>SPONSORS</h2>
         <div class="sponser-banner">
@@ -307,6 +318,8 @@
         </div>
       </div>
     </footer>
+
     <script src="js/script.js"></script>
+    <script src="js/cheerup.js"></script>
   </body>
 </html>
