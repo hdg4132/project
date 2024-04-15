@@ -110,22 +110,25 @@ function scrollCheck() {
 
 
 
-if(document.querySelector('.scroll-top')){
 function scrollCheck2() {
-    let scrollY = window.scrollY1 ? window.scrollY1 : window.pageYOffset;
-  // 스크롤 상태확인 후 일정 픽셀만큼 내리면 출현
-  if (scrollY > 600) {
-    slideEl.classList.add("active");
-  }
-  // 스크롤 상태를 계속 확인해서 스크롤이 움직인 상태가 아니면(맨 위로 돌아오면)
-  // class="active"를 원복해서 css가 적용안되도록
-  else {
-    slideEl.classList.remove("active");
+  
+  if(document.querySelector('.scroll-top')){
+      let scrollY = window.scrollY1 ? window.scrollY1 : window.pageYOffset;
+    // 스크롤 상태확인 후 일정 픽셀만큼 내리면 출현
+    if (scrollY > 600) {
+      slideEl.classList.add("active");
+    }
+    // 스크롤 상태를 계속 확인해서 스크롤이 움직인 상태가 아니면(맨 위로 돌아오면)
+    // class="active"를 원복해서 css가 적용안되도록
+    else {
+      slideEl.classList.remove("active");
+    }
   }
 }
 
 
 
+if(document.querySelector('.scroll-top')){
   function scrollCheck2() {
     if(document.querySelector('.scroll-top')){let scrollY = window.scrollY1 ? window.scrollY1 : window.pageYOffset;
       // 스크롤 상태확인 후 일정 픽셀만큼 내리면 출현
