@@ -1,3 +1,83 @@
+
+// 240403 sjh team_bi script
+
+    const sub_aside_li = document.querySelectorAll('.side_menu li');
+    for(let i = 0; i<sub_aside_li.length; i++){
+        if(sub_aside_li[i].querySelector('.sub_side_menu')){
+            sub_aside_li[i].classList.add('has_sub')
+        }else{
+            sub_aside_li[i].classList.remove('has_sub')
+        }
+    }
+
+    const sub_sub_aside = document.querySelectorAll('.side_menu .has_sub a');
+    sub_sub_aside.forEach(function(e){
+        e.addEventListener('click', function(idx){
+            this.parentNode.querySelector('.sub_side_menu').classList.toggle('show')
+        })
+    })
+
+
+    const tab_li = document.querySelectorAll('.tabs_li li'),
+        tab_con = document.querySelectorAll('.tabs_con > div');
+        
+        
+
+    tab_li.forEach(function(e, idx){
+        e.addEventListener('click', function(){
+            for(let i=0; i<tab_con.length; i++){
+                tab_li[i].classList.remove('active')
+                tab_con[i].classList.remove('show')
+            }
+            e.classList.add('active')
+            tab_con[idx].classList.add('show')
+        })
+    })
+
+    const aco_li = document.querySelectorAll('.uniform_li li'),
+        aco_li_tt = document.querySelectorAll('.uniform_li_tt');
+    aco_li_tt.forEach(function(e){
+        e.addEventListener('click', function(){
+            if(this.parentNode.classList.contains('active')){
+                this.parentNode.classList.remove('active')
+            }else{
+                for(let i=0; i<aco_li.length; i++){
+                    aco_li[i].classList.remove('active')
+                }
+                this.parentNode.classList.add('active')
+            }
+        })
+    })
+
+    if(document.querySelector('.go_top')){
+      const go_top = document.querySelector('.go_top'),
+        footer = document.querySelector('footer')
+      go_top.addEventListener('click', function(){
+          window.scrollTo({
+              top:0, behavior:'smooth'
+          })
+        })
+        this.window.addEventListener('scroll', function(){
+            //this.alert(footer.offsetHeight)
+            if(this.window.scrollY > 100){
+                go_top.classList.add('active')
+                if(this.window.scrollY > footer.offsetTop - footer.offsetHeight - 600){
+                    go_top.classList.add('bottom')
+                }else{
+                    go_top.classList.remove('bottom')
+                }
+            }else{
+                go_top.classList.remove('active')
+        
+            }
+        })
+    }
+
+
+
+
+// ---- 240403 sjh team_bi script
+
 const headerEl = document.querySelector("header");
 const megaEl = document.getElementById("magaheader");
 const imgEl = document.querySelector("#kiwoom");
@@ -30,6 +110,22 @@ function scrollCheck() {
 
 
 
+if(document.querySelector('.scroll-top')){
+function scrollCheck2() {
+    let scrollY = window.scrollY1 ? window.scrollY1 : window.pageYOffset;
+  // 스크롤 상태확인 후 일정 픽셀만큼 내리면 출현
+  if (scrollY > 600) {
+    slideEl.classList.add("active");
+  }
+  // 스크롤 상태를 계속 확인해서 스크롤이 움직인 상태가 아니면(맨 위로 돌아오면)
+  // class="active"를 원복해서 css가 적용안되도록
+  else {
+    slideEl.classList.remove("active");
+  }
+}
+
+
+
   function scrollCheck2() {
     if(document.querySelector('.scroll-top')){let scrollY = window.scrollY1 ? window.scrollY1 : window.pageYOffset;
       // 스크롤 상태확인 후 일정 픽셀만큼 내리면 출현
@@ -45,6 +141,7 @@ function scrollCheck() {
 }
 if(document.querySelector('.scroll-top')){
 // 위로 스크롤용 이벤트리스너
+
 window.addEventListener('scroll', function() {
   // console.log(scrollY);
 });
@@ -59,6 +156,19 @@ document.querySelector('.scroll-top').addEventListener('click', function () {
 
 
 
+
+  window.addEventListener('scroll', function() {
+    // console.log(scrollY);
+  });
+  document.querySelector('.scroll-top').addEventListener('click', function () {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    })
+  });
+  
+}
 // 하부 헤더에 마우스 올리면 대형헤더에 active추가
 function mouseCheck() {
   megaEl.addEventListener('mouseover', (Event) =>{

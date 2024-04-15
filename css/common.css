@@ -183,8 +183,14 @@ a {
   header .magaheader .depth2 a:hover {
     text-decoration: underline solid;
   }
+
+  /* 240415 서브하위메뉴 추가 sjh */
+  header .magaheader a{justify-content: center;}
   
-  
+  header .magaheader .depth2 dd{margin-left: 0;}
+  header .magaheader .depth2 dd a{font-size:16px; font-weight:400; justify-content: flex-start; padding: 15px 0 15px; height: auto; display: block; width:100%; text-align: center;}
+  /* 240415 서브하위메뉴 추가 sjh */
+
   header .magaheader h1 {
     width: 102px;
     height: 74px;
