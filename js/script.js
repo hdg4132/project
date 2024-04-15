@@ -1,6 +1,5 @@
 // 240403 sjh team_bi script
 
-window.addEventListener('DOMContentLoaded', function(){
     const sub_aside_li = document.querySelectorAll('.side_menu li');
     for(let i = 0; i<sub_aside_li.length; i++){
         if(sub_aside_li[i].querySelector('.sub_side_menu')){
@@ -20,6 +19,8 @@ window.addEventListener('DOMContentLoaded', function(){
 
     const tab_li = document.querySelectorAll('.tabs_li li'),
         tab_con = document.querySelectorAll('.tabs_con > div');
+        
+        
 
     tab_li.forEach(function(e, idx){
         e.addEventListener('click', function(){
@@ -68,4 +69,6 @@ window.addEventListener('DOMContentLoaded', function(){
     
         }
     })
-})
+
+
+AOS.init();
