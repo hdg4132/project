@@ -1,4 +1,4 @@
-const side_menu = document.querySelectorAll(".menu .under > li");
+const side_menu = document.querySelectorAll(".side_menu .list_style > li");
 side_menu.forEach(function (item, index) {
   item.addEventListener("click", function () { //아이템을 클릭할때 이벤트
     /*
@@ -22,7 +22,7 @@ window.addEventListener("scroll", function () {
 });
 
 go_top.addEventListener("click", function () {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo({ top: 0, behavior: "smooth"});
 });
 
 /*

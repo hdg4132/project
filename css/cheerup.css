@@ -40,7 +40,7 @@
   display: flex;
 }
 
-.menu {
+.side_menu {
   margin: 30px 40px 0 0;
   line-height: 2.5rem;
   cursor: pointer;
@@ -50,82 +50,90 @@ main {
   width: 70%;
 }
 
-.ch-1 {
+.title{
   width: 100%;
   text-align: center;
   line-height: 20px;
   margin-bottom: 50px;
 }
 
-.ch-1 h1 {
+.title h1 {
   margin: 20px;
   font-size: 32px;
 }
 
-.ch-1 p {
+.title p {
   font-size: 13px;
   color: grey;
 }
 
-#ch-2 {
+#text {
   width: 100%;
   display: flex;
   justify-content: space-between;
   height: 366px;
-  overflow: hidden;
 }
 
-.ch-2 h2 {
+.txt_content h2 {
   color: rgb(135, 34, 34);
   margin-bottom: 30px;
   font-size: 25px;
 }
 
-.ch-2 p {
+.txt_content p {
   font-size: 14px;
   line-height: 24px;
 }
 
-.ch-2 .che {
+.txt_content .txt_bold {
+  margin: 35px 0;
+  font-weight: bold;
+}
+
+.txt_content .txt_tt {
   margin: 35px 0;
 }
 
-.song1 img {
+.btn_show {
+  display: block;
+}
+
+.song_1 img {
   width: 100%;
   margin-bottom: 10px;
 }
 
-.sec {
+.song {
   display: flex;
   width: 100%;
   margin: 50px 0;
 }
 
-.sec p {
+.song p {
   margin-bottom: 30px;
   font-weight: bold;
   font-size: 14px;
 }
 
-.sec p::after {
+.song p::after {
   content: "";
 }
 
-.sec div {
+.song div {
   width: 30%;
   margin-right: 5%;
 }
 
-.sec div:last-child {
+.song div:last-child {
   margin-right: 0;
 }
 
-.sec div audio {
+.song div audio {
   width: 100%;
   margin-top: 5px;
 }
 
-#sec-1 {
+#section {
   margin: 50px 0 60px 0;
 }
 
@@ -149,11 +157,11 @@ aside {
   display: block;
 }
 
-.home .ho::before {
+.home .home_li::before {
   content: "·";
 }
 
-.sec div button {
+.song div button {
   width: 100%;
   background-color: transparent;
   border: 1px solid rgba(128, 128, 128, 0.5);
@@ -163,25 +171,25 @@ aside {
   cursor: pointer;
 }
 
-.sec div img {
+.song div img {
   width: 100%;
 }
 
-#sec-2,
-#sec-4 {
+#section_2,
+#section_4 {
   border-top: 1px solid rgba(128, 128, 128, 0.5);
   border-bottom: 1px solid rgba(128, 128, 128, 0.5);
 }
 
-#sec-5 {
+#section_5 {
   margin-bottom: 150px;
 }
 
-.sec .se {
+.song .song_title {
   position: relative;
 }
 
-.sec .se::after {
+.song .song_title::after {
   position: absolute;
   display: block;
   width: 20px;
@@ -190,11 +198,11 @@ aside {
   top: 30px;
 }
 
-#ch .ch-2 .ch-2-2 {
+#text .txt_content .new {
   position: relative;
 }
 
-#ch .ch-2 .ch-2-2::after {
+#text .txt_content .new::after {
   content: "";
   position: absolute;
   display: block;
@@ -204,37 +212,37 @@ aside {
   top: 45px;
 }
 
-.menu {
+.side_menu {
   margin: 30px 40px 0 0;
   line-height: 2.5rem;
 }
 
-.menu li {
+.side_menu li {
   list-style: none;
 }
 
-.under > li {
+.list_style > li {
   font-size: 15px;
   width: 250px;
   position: relative;
 }
-.under > li:nth-child(1) {
+.list_style > li:nth-child(1) {
   border-bottom: 1px solid #aaa;
 }
-.under > li:nth-child(3) {
+.list_style > li:nth-child(3) {
   border-top: 1px solid #aaa;
   border-bottom: 1px solid #aaa;
 }
 
-.under > li:nth-child(4) {
+.list_style > li:nth-child(4) {
   border-bottom: 1px solid #aaa;
 }
 
-.under > li a {
+.list_style > li a {
   padding: 3px 15px;
 }
 
-.menu a {
+.side_menu a {
   text-decoration: none;
   color: black;
 }
@@ -248,33 +256,33 @@ aside {
 }
 
 
-.under > li:hover {
+.list_style > li:hover {
   background-color: white;
   transition-duration: 1s;
   border-color: rgb(135, 34, 34);
 }
 
-.under > li:hover a {
+.list_style > li:hover a {
   color: rgb(135, 34, 34);
 }
 
-.under > li.on .submenu {
+.list_style > li.on .submenu {
   background-color: #e5e5e5;
   height: 125px;
   
   width: 250px;
   border-top: 1px solid rgb(135, 34, 34);
 }
-.under > li .submenu li{
+.list_style > li .submenu li{
   color: black;
   padding-left: 35px;
 }
 
-.under > li .submenu li:hover {
+.list_style > li .submenu li:hover {
   color:rgb(135, 34, 34);
 }
 
-.under > li:before {
+.list_style > li:before {
   content: "";
   position: absolute;
   display: block;
@@ -286,11 +294,11 @@ aside {
   left: 3px;
 }
 
-.under > li:hover:before {
+.list_style > li:hover:before {
   background-color: rgb(135, 34, 34);
 }
 
-.under .ud:after {
+.list_style .dropdown:after {
   content: "";
   position: absolute;
   display: block;
